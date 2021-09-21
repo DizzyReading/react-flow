@@ -215,6 +215,7 @@ const MeetingNode = ({ data, isConnectable }) => {
         type="target"
         onConnect={(params) => console.log("handle onConnect", params)}
         isConnectable={isConnectable}
+        style={{ background: "#9c27b0" }}
       />
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
@@ -251,7 +252,7 @@ const MeetingNode = ({ data, isConnectable }) => {
         type="source"
         position="bottom"
         id="b"
-        style={{ background: "#555" }}
+        style={{ background: "#9c27b0" }}
         isConnectable={isConnectable}
       />
     </>

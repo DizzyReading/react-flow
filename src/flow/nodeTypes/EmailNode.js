@@ -164,6 +164,7 @@ const EmailNode = ({ isConnectable }) => {
         type="target"
         onConnect={(params) => console.log("handle onConnect", params)}
         isConnectable={isConnectable}
+        style={{ background: "#F18921" }}
       />
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
@@ -204,7 +205,7 @@ const EmailNode = ({ isConnectable }) => {
         type="source"
         position="bottom"
         id="b"
-        style={{ background: "#555" }}
+        style={{ background: "#F18921" }}
         isConnectable={isConnectable}
       />
     </>

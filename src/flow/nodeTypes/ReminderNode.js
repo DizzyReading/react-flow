@@ -200,6 +200,7 @@ const ReminderNode = ({ data, isConnectable }) => {
         type="target"
         onConnect={(params) => console.log("handle onConnect", params)}
         isConnectable={isConnectable}
+        style={{ background: "#2e7d32" }}
       />
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
@@ -235,7 +236,7 @@ const ReminderNode = ({ data, isConnectable }) => {
         type="source"
         position="bottom"
         id="b"
-        style={{ background: "#555" }}
+        style={{ background: "#2e7d32" }}
         isConnectable={isConnectable}
       />
     </>
